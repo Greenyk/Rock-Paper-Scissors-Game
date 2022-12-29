@@ -12,20 +12,35 @@ body {
     align-items: center;
     gap: 30px;
     color: #424040;
+    background-color: rgba(172, 89, 252, 1);
+
 }
 button {
     cursor: pointer;
 }
 
 h1 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 35px;
     letter-spacing: 2px;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.title-with-score {
+    display: block;
+    border: solid 5px;
+    border-radius: 12px;
+    padding: 12px 180px;
+
 }
 
 .scores {
     display: flex;
     align-items: center;
     gap: 20px
+
 }
 
 .scores p {
@@ -40,13 +55,20 @@ h1 {
     background: blue;
 }
 
+p.computer {
+    background-color: grey;
+}
+
 .scores span {
     font-size: 35px;
 }
 
+
 .options button {
-    border: none;
-    margin: 30px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+    border: none
 }
 
 .options button.active {
@@ -69,6 +91,7 @@ h1 {
 }
 
 .result-text {
+    font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 40px;
     width: 50%;
     text-align: center;
